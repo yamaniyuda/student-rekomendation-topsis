@@ -1,7 +1,7 @@
 <x-guest-layout>
     <x-authentication-card>
         <x-slot name="logo">
-            <x-authentication-card-logo />
+            <x-application-mark class="block bg-white w-[20vh] h-[20vh] rounded-full" />
         </x-slot>
 
         <x-validation-errors class="mb-4" />

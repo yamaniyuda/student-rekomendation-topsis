@@ -16,12 +16,15 @@
 
         <!-- Styles -->
         @livewireStyles
+        <script>
+            document.addEventListener('livewire:init', () => {
+                Livewire.onPageExpired((response, message) => {})
+            })
+        </script>
     </head>
     <body>
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
-
-        @livewireScripts
     </body>
 </html>
